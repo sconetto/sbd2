@@ -1,0 +1,20 @@
+-- --------            << NOME DO PROJETO >>            ------------ --
+--                                                                   --
+--                    SCRIPT DE CRIACAO (DDL)                        --
+--                                                                   --
+-- Data Criacao ..........: 13/09/2016                              --
+-- Autor(es) .............: Ana Maria Braga                         --
+-- Banco de Dados ........: MySQL                                   --
+-- Base de Dados(nome) ...: bdFinanceiro                            --
+--                                                                   --
+-- Data Ultima Alteracao ..: 14/09/2016                              --
+--    + Criacao nova tabela                                          --
+--                                                                   --
+-- PROJETO => 1 Base de Dados                                        --
+--         => 4 Tabelas                                              --
+--         => 2 Sequencias                                           --
+--         => 5 Visoes                                               --
+--         => : : :  <<indicar outros objetos de Banco de Dados>>    --
+--                                                                   --
+-- ----------------------------------------------------------------- --
+
