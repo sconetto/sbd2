@@ -131,126 +131,126 @@ Disciplina: SBD2
 ## Bancos de Dados Geográficos
 
 ### Verdadeiro ou Falso
-1. 
-Enunciado: 
-Resposta: 
+1. Sobreposição em SIGs
+Enunciado: A sobreposição de um ou mais mapas é um recurso interessante quando se busca apresentar e comparar diferentes dados e informações, referentes a uma mesma localidade, em um único mapa. Logo, a sobreposição de mapas é uma forma de sobrepor um mapa a outro para obter informações comparadas.
+Resposta: Verdadeiro 
 
-Comentário para acerto: 
-Comentário para erro: 
+Comentário para acerto: Correto, a sobreposição de mapas é uma forma de sobrepor mapas para obter informações e é bastante utilizado em SIGs. 
+Comentário para erro: Errado, a sobreposição de mapas é uma forma de sobrepor mapas para obter informações e é bastante utilizado em SIGs.
 
-Dificuldade: 
-Categoria: 
+Dificuldade: Fácil
+Categoria: Fixação
 Disciplina: SBD2
 
 
-2. 
-Enunciado: 
-Resposta: 
+2. Estrutura dos dados no SIG
+Enunciado: A estrutura dos dados espaciais se divide em veotriais e matriciais. Sendo a primeira delas usada para representar coordenadas das fronteiras de cada entidade através de apenas vetores.
+Resposta: Falso
 
-Comentário para acerto: 
-Comentário para erro: 
+Comentário para acerto: Correto, há também a representação através de pontos, linhas e áreas (polígonos).
+Comentário para erro: Ela representa também através de pontos, linhas e áreas (polígonos).
 
-Dificuldade: 
-Categoria: 
+Dificuldade: Médio
+Categoria: Fixação
 Disciplina: SBD2
 
 
 ### Múltipla Escolha
-1. 
-Enunciado: 
-Opção 1: 
-Opção 2: 
-Opção 3: 
-Opção 4: 
+1. Questões de importância para o SIG
+Enunciado: Os SIGs (Sistemas de Informação Geográfica) permitem compatibilizar a informação proveniente de diversas fontes, como informação de sensores espaciais (detecção remota/sensoriamento remoto), informação recolhida com GPS ou obtida com os métodos tradicionais da Topografia. Entre as questões em que um SIG pode ter um papel importante quais abaixo listadas NÃO faz parte das principais?
+Opção 1: Localização
+Opção 2: Rotas
+Opção 3: Armazenamento
+Opção 4: Material jornalístico
 
-Resposta correta: 
+Resposta correta: C
 
-Comentário 1: 
-Comentário 2: 
-Comentário 3: 
-Comentário 4:  
+Comentário 1: Localização é um fator importante de um SIG.
+Comentário 2: Rotas tem grande importâncias em SIGs modernos.
+Comentário 3: Armazenamento tem relevância para dados de um SIG mas não desempenha importância em questões geográficas.
+Comentário 4: Material jornalístico têm sido amplamente usados em SIGs para ampliar e aprofundar corberturas.
 
-Dificuldade: 
-Categoria: 
+Dificuldade: Difícil
+Categoria: Revisão
 Disciplina: SBD2
 
 
-2. 
-Enunciado: 
-Opção 1: 
-Opção 2: 
-Opção 3: 
-Opção 4: 
+2. Objetivos do SIG
+Enunciado: Bancos de dados geográficos (e os Sistemas de Informação Geográficas - SIG) foram construídos para auxiliar armazemanto, visualização desses mesmos dados. Quais das funções abaixo NÃO faz parte do objetivo dos bancos de dados geográficos.
+Opção 1: Manipular grandes volumes de dados.
+Opção 2: Manipular dados estruturados.
+Opção 3: Manipular dados complexos.
+Opção 4: Manipular mapas e imagens de satélite.
 
-Resposta correta: 
+Resposta correta: B
 
-Comentário 1: 
-Comentário 2: 
-Comentário 3: 
-Comentário 4: 
+Comentário 1: Um dos objetivos do SIG é manipular grandes volumes de dados geográficos.
+Comentário 2: Manipular dados estruturados não é um dos principais objetivos do SIG.
+Comentário 3: Um dos objetivos do SIG é manipular dados geográficos complexos.
+Comentário 4: Um dos objetivos do SIG é manipular dados como mapas e imagens de satélite.
 
-Dificuldade: 
-Categoria: 
+Dificuldade: Médio 
+Categoria: Revisão
 Disciplina: SBD2
 
 
 ### Escolhas Múltiplas
-1. 
-Enunciado: 
-Opção 1: 
-Opção 2: 
-Opção 3: 
-Opção 4: 
+1. Padrões de Dados Geográficos
+Enunciado: Na tentativa de chegar a uma padronização dos citados tipos de dados, existe o Open Geospatial Consortium. O objetivo é forçar os desenvolvedores de software de SIG e Geoprocessamento adotarem padrões. Atualmente, possui algumas especificações, quais dos listados abaixo fazem parte dos padrões definidos pela OGC? 
+Opção 1: SFS - Simple Features - SQL      - C
+Opção 2: WMS - Web Map Service            - C
+Opção 3: WCS - Web Coverage Service       - C
+Opção 4: GML - Geography Markup Language  - C
 
-Comentário Certo: 
-Comentário Errado: 
+Comentário Certo: Correto, todos listados acima são padrões definidos pela OGC.
+Comentário Errado: Todos listados são padrões definidos pela OGC.
 
-Dificuldade: 
-Categoria: 
+Dificuldade: Médio
+Categoria: Fixação
 Disciplina: SBD2
 
 
-2. 
-Enunciado: 
-Opção 1: 
-Opção 2: 
-Opção 3: 
-Opção 4: 
+2. Representação de dados geográficos
+Enunciado: Em bancos de dados geográficos algo importante a ser considerado é a representação dos dados a aserem armazenados nesse tipo de banco. Desse aspceto há alguns conceitos para a representação, entre eles temos:
+Opção 1: Geometria Matricial   - C
+Opção 2: Objeto Espacial       - C
+Opção 3: Geometria Topológica  - E
+Opção 4: Consulta Geográfica   - E
 
-Comentário Certo: 
-Comentário Errado: 
+Comentário Certo: Correto. Geometria matricial busca representar os dados em forma de matriz e objetos espaciais se tratam de objetos com atributos espaciais.
+Comentário Errado: Errado. Somente geometria matricial e objeto espacial são representações de dados geográficos.
 
-Dificuldade: 
-Categoria: 
+Dificuldade: Médio
+Categoria: Fixação
 Disciplina: SBD2
 
 
 ### Lacuna
-1. 
-Enunciado: 
-Frase: 
-Resposta correta: 
-Resposta alternativa: 
-Diferencia entre minúscula/maiúscula?: 
+1. Arquitetura dos SIG
+Enunciado: Bancos de dados geográficos possuem arquiteturas e modelos de dados específicos. As arquiteturas, que são mecanismos de estruturação da informação nesse tipo de banco de dados, são duas. Preencha a lacuna a seguir com o nome da arquitetura correta.
+Frase: As arquiteturas presentes nos bancos de dados geográficos são a integrada e a #
+Resposta correta: Dual
+Resposta alternativa: dual
+Diferencia entre minúscula/maiúscula?: Não 
 
-Comentário Certo: 
-Comentário Errado: 
+Comentário Certo: Correto, os banco de dados geográficos contam com a arquitetura integrada e a dual.
+Comentário Errado: Errado, os banco de dados geográficos contam com a arquitetura integrada e a dual.
 
-Dificuldade: 
-Categoria: 
+Dificuldade: Fácil
+Categoria: Fixação
 Disciplina: SBD2
 
 
-2. Transações
-Enunciado: 
-Frase: 
-Resposta correta: 
-Resposta alternativa: 
-Diferencia entre minúscula/maiúscula?: 
+2. Tipo de dados em SIGs
+Enunciado: Bancos de dados geográficos possuem arquiteturas e modelos de dados específicos. As arquiteturas, que são mecanismos de estruturação da informação nesse tipo de banco de dados, são duas. Acerca da arquitetura integrada em um SGBD relacional preencha a lacuna com o tipo correto do campo usado.
+Frase: A arquitetura integrada baseada em um SGBD relacional utiliza campos longos, chamados de #, para armazenar a componente espacial do dado.
+Resposta correta: blob
+Resposta alternativa: blobs
+Diferencia entre minúscula/maiúscula?: Não 
 
-Comentário Certo: 
-Comentário Errado: 
+Comentário Certo: Correto, os campos são os BLOBs.
+Comentário Errado: Errado, os campos utilizados são os BLOBs.
 
-Dificuldade: 
-Categoria: 
+Dificuldade: Difícil
+Categoria: Revisão
 Disciplina: SBD2
