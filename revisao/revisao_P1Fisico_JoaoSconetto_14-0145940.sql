@@ -51,7 +51,7 @@ CREATE TABLE telefoneContato (
     tipoDocumentoCliente_FK enum('cnpj', 'cpf') NOT NULL,
     numeroDocumentoCliente_FK bigint NOT NULL,
     CONSTRAINT telefoneContato_PK PRIMARY KEY (idTelefoneContato),
-    CONSTRAINT cliente_FK FOREIGN KEY (tipoDocumentoCliente_FK, numeroDocumentoCliente_FK) REFERENCES CLIENTE (tipoDocumento, numeroDocumento)
+    CONSTRAINT clienteTelefone_FK FOREIGN KEY (tipoDocumentoCliente_FK, numeroDocumentoCliente_FK) REFERENCES CLIENTE (tipoDocumento, numeroDocumento)
 ) ENGINE=InnoDB AUTO_INCREMENT=0;
 
 CREATE TABLE TRABALHA (
@@ -63,4 +63,3 @@ CREATE TABLE TRABALHA (
     CONSTRAINT projeto_FK FOREIGN KEY (idProjeto_FK) REFERENCES PROJETO (idProjeto),
     CONSTRAINT profissional_FK FOREIGN KEY (matriculaProfissional_FK) REFERENCES PROFISSIONAL (matricula)
 ) ENGINE=InnoDB AUTO_INCREMENT=0;
- 
