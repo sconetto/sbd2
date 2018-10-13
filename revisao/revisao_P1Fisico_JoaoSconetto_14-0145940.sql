@@ -39,6 +39,7 @@ CREATE TABLE PROJETO (
     dataCelebracaoContrato date NOT NULL,
     valorContrato float(12,2) NOT NULL,
     idProjeto int NOT NULL AUTO_INCREMENT,
+    nomeProjeto varchar(200) NOT NULL,
     tipoDocumentoCliente_FK enum('cnpj', 'cpf') NOT NULL,
     numeroDocumentoCliente_FK bigint NOT NULL,
     CONSTRAINT projeto_PK PRIMARY KEY (idProjeto),

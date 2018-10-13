@@ -38,12 +38,12 @@ INSERT INTO PROFISSIONAL (matricula, nomeCompleto, especialidade) VALUES
 (137, 'Maurílio Roberto Lourdes', 'Designer'),
 (216, 'José da Silva Pereira', 'Desenvolvedor');
 
-INSERT INTO PROJETO (idProjeto, dataCelebracaoContrato, valorContrato, tipoDocumentoCliente_FK, numeroDocumentoCliente_FK) VALUES
-(17, '2018-01-01', 250000, 'cnpj', 12345689900018),
-(13, '2017-06-01', 1000000, 'cnpj', 58975608700015),
-(35, '2018-08-14', 150000, 'cpf', 12345678901),
-(27, '2018-02-27', 30000, 'cpf', 02506752488),
-(1, '2016-11-09', 800000, 'cpf', 02557878920);
+INSERT INTO PROJETO (idProjeto, nomeProjeto, dataCelebracaoContrato, valorContrato, tipoDocumentoCliente_FK, numeroDocumentoCliente_FK) VALUES
+(17, 'Sede JK', '2018-01-01', 250000, 'cnpj', 12345689900018),
+(13, 'Conscientização Infecto Imunológicas', '2017-06-01', 1000000, 'cnpj', 58975608700015),
+(35, 'Campanha VotoConsciente', '2018-08-14', 150000, 'cpf', 12345678901),
+(27, 'Banner Bolos Caseiros', '2018-02-27', 30000, 'cpf', 02506752488),
+(1, 'Aplicativo Mobile TapStudy', '2016-11-09', 800000, 'cpf', 02557878920);
 
 INSERT INTO TRABALHA (matriculaProfissional_FK, idProjeto_FK, valorUnitarioProfissional, idTrabalha) VALUES
 (158, 17, 7500, 12),
