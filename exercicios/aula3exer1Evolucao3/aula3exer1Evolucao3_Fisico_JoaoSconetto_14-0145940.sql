@@ -1,4 +1,4 @@
-﻿-- --------                aula3exer1     	            ------------ --
+﻿-- --------              aula3exer1evolucao3            ------------ --
 --                                                                   --
 --                    SCRIPT DE CRIAÇÃO (DDL)                        --
 --                                                                   --
@@ -6,9 +6,11 @@
 -- Autor(es) ..............: João Pedro Sconetto                     --
 --                         : Filipe Toyoshima Silva                  --
 -- Banco de Dados .........: MySQL                                   --
--- Banco de Dados(nome) ...: aula3exer1                              --
+-- Banco de Dados(nome) ...: aula3exer1evolucao3                     --
 --                                                                   --
 -- Data Ultima Alteracao ..: 11/09/2018                              --
+--                           14/10/2018 - ajustando a consulta para  --
+--                             a terceira evolução do exercício      --
 --   			                                                           --
 --                                                                   --
 -- PROJETO => 1 Base de Dados                                        --
@@ -17,9 +19,9 @@
 --                                                                   --
 -- ----------------------------------------------------------------- --
 
-CREATE DATABASE IF NOT EXISTS aula3exer1evolucao2;
+CREATE DATABASE IF NOT EXISTS aula3exer1evolucao3;
 
-USE aula3exer1evolucao2;
+USE aula3exer1evolucao3;
 
 CREATE TABLE IF NOT EXISTS Setor (
   nomeSetor varchar(100) NOT NULL,
