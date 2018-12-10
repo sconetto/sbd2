@@ -1,0 +1,110 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.MakeDensityBasedClusterer -M 1.0E-6 -W weka.clusterers.SimpleKMeans -- -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 2 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 10
+Relation:     QueryResult-weka.filters.unsupervised.attribute.Remove-R1,6,8,10
+Instances:    25979
+Attributes:   9
+              country
+              league
+              season
+              stage
+              home_name
+              visitor_name
+              home_team_goal
+              away_team_goal
+              win
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+MakeDensityBasedClusterer: 
+
+Wrapped clusterer: 
+kMeans
+======
+
+Number of iterations: 6
+Within cluster sum of squared errors: 130248.7768778428
+
+Initial starting points (random):
+
+Cluster 0: Belgium,'Belgium Jupiler League',2008/2009,12,'FCV Dender EH','KV Kortrijk',1,0,'Home Wins!'
+Cluster 1: Italy,'Italy Serie A',2012/2013,21,Juventus,Udinese,4,0,'Home Wins!'
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                                                                     Cluster#
+Attribute                                    Full Data                      0                      1
+                                             (25979.0)              (12052.0)              (13927.0)
+====================================================================================================
+country                                         France                Belgium                  Italy
+league                                  France Ligue 1 Belgium Jupiler League          Italy Serie A
+season                                       2008/2009              2008/2009              2012/2013
+stage                                          18.2428                 11.995                23.6494
+home_name                        Girondins de Bordeaux               KAA Gent          Chievo Verona
+visitor_name                                Motherwell               KAA Gent                  Inter
+home_team_goal                                  1.5446                 1.5433                 1.5457
+away_team_goal                                  1.1609                  1.164                 1.1583
+win                                         Home Wins!             Home Wins!             Home Wins!
+
+
+
+Fitted estimators (with ML estimates of variance):
+
+Cluster: 0 Prior probability: 0.4639
+
+Attribute: country
+Discrete Estimator. Counts =  691 1057 1401 841 1225 1729 1401 1091 1225 1 1401  (Total = 12063)
+Attribute: league
+Discrete Estimator. Counts =  691 1057 1401 841 1225 1729 1401 1091 1225 1 1401  (Total = 12063)
+Attribute: season
+Discrete Estimator. Counts =  2947 1486 1516 1516 241 1288 1533 1533  (Total = 12060)
+Attribute: stage
+Normal Distribution. Mean = 11.995 StdDev = 8.1668
+Attribute: home_name
+Discrete Estimator. Counts =  70 45 68 44 71 37 70 72 36 70 67 65 47 72 20 29 63 46 68 55 53 68 68 51 51 28 63 72 70 73 91 33 72 52 72 65 107 92 18 32 18 92 69 71 62 71 20 46 45 53 71 45 70 70 72 70 69 71 69 18 18 18 65 42 50 46 72 54 62 64 107 110 72 70 70 28 72 71 60 71 25 68 73 70 68 107 107 92 107 48 107 77 71 73 63 45 55 63 71 68 68 70 66 60 68 67 68 48 70 46 61 26 68 69 16 67 24 32 28 69 50 107 1 1 61 53 61 68 67 72 71 1 1 1 1 1 1 1 1 68 27 18 69 65 68 70 16 53 54 20 45 55 45 71 72 65 66 70 107 1 1 69 68 68 68 71 73 37 1 1 1 1 1 1 1 1 44 61 68 69 72 70 72 20 70 52 46 44 25 50 43 60 51 33 53 43 28 27 27 49 9 26 18 19 36 1 1 26 1 10 10 42 64 16 10 17 36 17 10 17 8 10 9 42 42 1 1 10 9 46 17 36 18 34 9 26 19 27 10 36 25 35 34 1 49 27 10 17 27 26 1 27 27 27 28 1 1 26 17 1 19 27 27 10 17 27 27 1 19 9 26 1 34 17 17 9 10 10 10 17 18 10 1 9 10 9 10 10 10 10 10 9 9 1 1 10  (Total = 12348)
+Attribute: visitor_name
+Discrete Estimator. Counts =  69 68 36 70 70 45 72 70 44 35 41 50 46 55 72 70 72 71 71 29 70 90 66 24 69 45 70 54 63 72 69 66 61 69 70 49 107 107 107 107 48 92 62 71 45 46 69 71 53 55 28 62 45 70 53 20 70 68 60 72 70 27 66 49 66 62 72 29 56 70 77 48 62 72 29 74 69 44 61 68 67 69 70 18 69 110 92 32 18 107 92 18 20 71 45 46 73 71 72 18 66 69 67 18 67 33 16 68 107 63 72 61 69 50 64 67 66 69 70 107 70 66 107 1 1 70 69 43 69 65 45 37 1 1 1 1 1 1 1 1 70 70 68 60 16 34 67 25 70 72 71 69 70 20 56 72 66 67 70 1 1 26 69 60 18 46 53 70 1 1 1 1 1 1 1 1 69 51 70 60 54 20 46 71 71 70 55 43 60 25 44 10 28 26 17 53 44 37 51 54 18 34 26 27 55 1 1 9 1 9 27 45 64 16 9 19 34 9 11 19 9 19 1 1 10 45 45 19 9 46 26 34 28 18 10 10 36 34 27 17 9 36 1 35 49 19 26 26 26 27 26 9 25 19 1 1 26 1 27 1 17 19 26 26 10 26 9 27 17 26 1 1 34 19 10 9 19 9 19 9 9 18 1 10 9 9 9 10 10 10 9 9 1 9 9 1  (Total = 12348)
+Attribute: home_team_goal
+Normal Distribution. Mean = 1.5433 StdDev = 1.3028
+Attribute: away_team_goal
+Normal Distribution. Mean = 1.164 StdDev = 1.1479
+Attribute: win
+Discrete Estimator. Counts =  3511 5502 3042  (Total = 12055)
+
+Cluster: 1 Prior probability: 0.5361
+
+Attribute: country
+Discrete Estimator. Counts =  733 865 1641 985 1225 1 1641 963 1225 3018 1641  (Total = 13938)
+Attribute: league
+Discrete Estimator. Counts =  733 865 1641 985 1225 1 1641 963 1225 3018 1641  (Total = 13938)
+Attribute: season
+Discrete Estimator. Counts =  381 1746 1746 1706 3021 1746 1794 1795  (Total = 13935)
+Attribute: stage
+Normal Distribution. Mean = 23.6494 StdDev = 9.0171
+Attribute: home_name
+Discrete Estimator. Counts =  75 29 77 21 74 19 75 73 20 75 55 57 31 82 1 11 53 51 86 61 63 54 54 41 41 12 72 82 84 81 61 14 82 45 66 42 1 1 1 1 1 1 85 83 73 83 1 32 33 44 83 33 84 84 82 84 69 67 69 1 1 1 57 35 42 32 81 63 73 71 1 1 82 84 84 12 82 83 61 67 7 54 81 68 58 1 1 1 1 1 1 1 83 81 72 33 61 72 83 70 70 68 72 44 70 59 58 1 84 51 43 10 54 57 1 59 8 15 12 69 31 1 134 152 60 51 60 70 59 82 83 133 133 114 153 151 152 152 96 70 9 1 69 61 58 56 1 63 62 1 33 42 52 83 82 61 60 68 1 134 152 69 70 70 70 83 81 41 132 76 20 151 56 152 152 152 26 60 70 69 63 84 82 1 84 45 51 66 45 57 49 1 84 54 68 61 42 32 32 85 12 21 22 21 41 39 39 52 114 11 11 67 1 1 11 42 34 30 7 19 13 9 12 74 74 56 20 27 12 1 38 41 41 53 12 38 40 51 7 61 53 62 63 19 1 51 30 43 51 36 20 51 43 51 50 18 20 40 34 18 13 32 26 9 19 32 32 58 21 12 25 58 1 15 23 12 9 9 9 19 22 11 39 11 7 12 9 11 11 9 9 12 10 20 20 11  (Total = 14223)
+Attribute: visitor_name
+Discrete Estimator. Counts =  76 77 20 75 75 20 73 75 30 21 36 42 32 42 82 84 82 83 83 11 84 62 56 8 38 33 85 61 72 82 53 56 74 85 68 43 1 1 1 1 1 1 73 83 52 32 85 83 63 61 12 54 52 84 63 1 68 70 44 66 68 9 56 43 56 73 82 11 41 84 1 1 73 82 11 80 85 34 43 70 55 53 84 1 57 1 1 1 1 1 1 1 1 83 33 32 81 83 82 1 72 69 71 1 71 14 1 58 1 72 82 60 69 31 62 59 60 57 84 1 68 60 1 153 134 68 69 27 69 61 52 41 76 151 152 20 151 133 152 57 68 68 70 61 1 13 59 7 65 82 83 85 84 1 41 82 60 59 68 153 112 10 69 61 1 32 44 84 132 133 96 151 152 134 152 153 69 53 68 61 62 1 51 83 83 84 61 67 1 45 48 11 42 33 23 82 60 50 70 53 22 43 33 20 81 39 114 12 39 12 51 64 1 1 12 40 36 8 10 17 10 28 56 20 11 71 71 36 28 1 52 43 50 41 11 11 51 63 37 42 8 61 19 62 1 39 52 44 52 39 52 31 53 32 20 18 52 18 35 20 15 17 27 33 11 33 10 24 23 33 58 58 1 13 11 10 17 10 21 12 10 22 39 10 8 12 12 11 9 11 10 12 20 10 10 20  (Total = 14223)
+Attribute: home_team_goal
+Normal Distribution. Mean = 1.5457 StdDev = 1.2922
+Attribute: away_team_goal
+Normal Distribution. Mean = 1.1583 StdDev = 1.137
+Attribute: win
+Discrete Estimator. Counts =  3957 6417 3556  (Total = 13930)
+
+
+Time taken to build model (full training data) : 0.51 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0      12737 ( 49%)
+1      13242 ( 51%)
+
+
+Log likelihood: -25.56005
+

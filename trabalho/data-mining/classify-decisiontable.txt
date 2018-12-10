@@ -1,0 +1,64 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.DecisionTable -X 1 -S "weka.attributeSelection.BestFirst -D 1 -N 5"
+Relation:     QueryResult-weka.filters.unsupervised.attribute.Remove-R1,6-weka.filters.unsupervised.attribute.Remove-R6,8
+Instances:    25979
+Attributes:   9
+              country
+              league
+              season
+              stage
+              home_name
+              visitor_name
+              home_team_goal
+              away_team_goal
+              win
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+Decision Table:
+
+Number of training instances: 25979
+Number of Rules : 36
+Non matches covered by Majority class.
+    Best first.
+    Start set: no attributes
+    Search direction: forward
+    Stale search after 5 node expansions
+    Total number of subsets evaluated: 34
+    Merit of best subset found:  100    
+Evaluation (for feature selection): CV (leave one out) 
+Feature set: 7,8,9
+
+Time taken to build model: 2.04 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0.08 seconds
+
+=== Summary ===
+
+Correctly Classified Instances       25979              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0.0018
+Root mean squared error                  0.0062
+Relative absolute error                  0.4163 %
+Root relative squared error              1.334  %
+Total Number of Instances            25979     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     Visitor Wins!
+                 1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     Home Wins!
+                 1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     Draw!
+Weighted Avg.    1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     
+
+=== Confusion Matrix ===
+
+     a     b     c   <-- classified as
+  7466     0     0 |     a = Visitor Wins!
+     0 11917     0 |     b = Home Wins!
+     0     0  6596 |     c = Draw!

@@ -1,0 +1,80 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.FilteredClusterer -F "weka.filters.AllFilter " -W weka.clusterers.SimpleKMeans -- -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 2 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 10
+Relation:     QueryResult-weka.filters.unsupervised.attribute.Remove-R1,6-weka.filters.unsupervised.attribute.Remove-R6,8
+Instances:    25979
+Attributes:   9
+              country
+              league
+              season
+              stage
+              home_name
+              visitor_name
+              home_team_goal
+              away_team_goal
+              win
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+FilteredClusterer using weka.clusterers.SimpleKMeans -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 2 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 10 on data filtered through weka.filters.AllFilter 
+
+Filtered Header
+@relation 'QueryResult-weka.filters.unsupervised.attribute.Remove-R1,6-weka.filters.unsupervised.attribute.Remove-R6,8-weka.filters.AllFilter'
+
+@attribute country {Switzerland,Poland,France,Scotland,Germany,Belgium,England,Portugal,Netherlands,Italy,Spain}
+@attribute league {'Switzerland Super League','Poland Ekstraklasa','France Ligue 1','Scotland Premier League','Germany 1. Bundesliga','Belgium Jupiler League','England Premier League','Portugal Liga ZON Sagres','Netherlands Eredivisie','Italy Serie A','Spain LIGA BBVA'}
+@attribute season {2008/2009,2009/2010,2010/2011,2011/2012,2012/2013,2013/2014,2014/2015,2015/2016}
+@attribute stage numeric
+@attribute home_name {'BSC Young Boys','FC Aarau','FC Luzern','Neuchâtel Xamax','FC Basel','AC Bellinzona','FC Zürich','FC Sion','FC Vaduz','Grasshopper Club Zürich','Legia Warszawa','Lech Poznan','AJ Auxerre','Girondins de Bordeaux','Le Havre AC','Le Mans FC','AS Monaco','AS Nancy-Lorraine','Stade Rennais FC','FC Sochaux-Montbéliard','Valenciennes FC','Wisla Kraków','Slask Wroclaw','Widzew Lódz','Piast Gliwice',Falkirk,'Heart of Midlothian',Kilmarnock,Aberdeen,'Olympique Lyonnais','Polonia Bytom','Arka Gdynia',Celtic,'Hamilton Academical FC','FC Bayern Munich',Cracovia,'SV Zulte-Waregem','KSV Cercle Brugge','FCV Dender EH','KSV Roeselare',Tubize,'KVC Westerlo',Arsenal,Sunderland,'West Ham United',Everton,Middlesbrough,'Bolton Wanderers','Hull City','SM Caen','LOSC Lille','FC Nantes','OGC Nice','Paris Saint-Germain','AS Saint-Étienne','Toulouse FC','Bayer 04 Leverkusen','FC Schalke 04','VfL Wolfsburg','DSC Arminia Bielefeld','FC Energie Cottbus','Karlsruher SC','Ruch Chorzów','P. Warszawa','GKS Belchatów',Rangers,Motherwell,Hibernian,'Inverness Caledonian Thistle','St. Mirren','KRC Genk','KAA Gent','Manchester United','Aston Villa',Chelsea,'Grenoble Foot 38','FC Lorient','Olympique de Marseille','Eintracht Frankfurt','Borussia Mönchengladbach','Odra Wodzislaw','Jagiellonia Bialystok','Dundee United','Hannover 96','Vitória Guimarães','RSC Anderlecht','Standard de Liège','Sporting Charleroi','Sporting Lokeren','Royal Excel Mouscron','KV Kortrijk','Beerschot AC',Liverpool,'Tottenham Hotspur','Newcastle United','Blackburn Rovers',Fulham,'West Bromwich Albion','Stoke City','Hamburger SV','Borussia Dortmund','VfB Stuttgart','SV Werder Bremen','Hertha BSC Berlin','TSG 1899 Hoffenheim','Sporting CP','FC Paços de Ferreira','RAEC Mons','Manchester City','Wigan Athletic','1. FC Köln','VfL Bochum','Lechia Gdansk','FC Porto',Amadora,'Rio Ave FC','Leixões SC','Naval 1° de Maio',Portsmouth,Vitesse,'CF Os Belenenses','KV Mechelen',Sampdoria,Udinese,'Roda JC Kerkrade','Willem II',N.E.C.,'FC Utrecht','SL Benfica','Valencia CF','RCD Espanyol',Atalanta,Cagliari,Catania,'Chievo Verona',Fiorentina,Milan,Roma,Torino,'Heracles Almelo','Sparta Rotterdam','FC Volendam',AZ,'Vitória Setúbal','CD Nacional','Académica de Coimbra',Trofense,'CA Osasuna','RC Deportivo de La Coruña','CD Numancia','Racing Santander','Real Sporting de Gijón','Real Betis Balompié','Athletic Club de Bilbao','Atlético Madrid','CS Marítimo','SC Braga','SC Heerenveen','Club Brugge KV',Palermo,Inter,PSV,'ADO Den Haag','FC Twente',Feyenoord,'FC Barcelona','Sevilla FC','Real Valladolid',Bologna,Siena,'Reggio Calabria',Napoli,Lecce,Lazio,Juventus,Genoa,'De Graafschap','NAC Breda','FC Groningen',Ajax,'Villarreal CF','Real Madrid CF','Getafe CF','RC Recreativo','Málaga CF','UD Almería','RCD Mallorca','FC St. Gallen','RKC Waalwijk','Korona Kielce','Zaglebie Lubin','Sint-Truidense VV','Montpellier Hérault SC','1. FC Nürnberg','1. FSV Mainz 05','SC Freiburg',VVV-Venlo,'Wolverhampton Wanderers','RC Lens','St. Johnstone FC','US Boulogne Cote D\'Opale','União de Leiria, SAD','Birmingham City',Burnley,'S.C. Olhanense',Livorno,Bari,'Real Zaragoza',Parma,'Xerez Club Deportivo','CD Tenerife','FC Thun','Lierse SK','KAS Eupen','AC Arles-Avignon','Stade Brestois 29',Excelsior,'SC Beira Mar',Portimonense,'1. FC Kaiserslautern',Blackpool,'FC St. Pauli','Hércules Club de Fútbol','Levante UD','Real Sociedad',Cesena,Brescia,'Servette FC','Dunfermline Athletic','Oud-Heverlee Leuven','FC Lausanne-Sports','Podbeskidzie Bielsko-Biala','AC Ajaccio','FC Augsburg','Dijon FCO','Gil Vicente FC','Queens Park Rangers','Évian Thonon Gaillard FC',Feirense,'Swansea City','Norwich City','Granada CF','Rayo Vallecano',Novara,Waasland-Beveren,'Ross County FC','ES Troyes AC','Dundee FC','Stade de Reims','Pogon Szczecin',Reading,'SC Bastia','PEC Zwolle','RC Celta de Vigo',Southampton,'SpVgg Greuther Fürth',Pescara,'Estoril Praia','Moreirense FC','Fortuna Düsseldorf','Zawisza Bydgoszcz','Partick Thistle F.C.','SC Cambuur','Eintracht Braunschweig','Go Ahead Eagles','En Avant de Guingamp','Crystal Palace','Hellas Verona','Elche CF','Cardiff City','FC Arouca',Sassuolo,'KV Oostende','Górnik Leczna','Leicester City','FC Metz','FC Dordrecht','FC Penafiel','SC Paderborn 07','Boavista FC','SD Eibar','Córdoba CF',Empoli,Lugano,'Termalica Bruk-Bet Nieciecza',Bournemouth,Tondela,Watford,'Angers SCO','SV Darmstadt 98','Uniao da Madeira','GFC Ajaccio','FC Ingolstadt 04',Frosinone,Carpi,'UD Las Palmas'}
+@attribute visitor_name {'FC Basel','FC Sion','FC Vaduz','FC Zürich','Grasshopper Club Zürich','Neuchâtel Xamax','FC Luzern','BSC Young Boys','FC Aarau','AC Bellinzona','P. Warszawa','GKS Belchatów','FC Nantes','SM Caen','OGC Nice','FC Lorient','Paris Saint-Germain','LOSC Lille','Olympique de Marseille','Grenoble Foot 38','AS Saint-Étienne','Polonia Bytom','Lechia Gdansk','Odra Wodzislaw',Cracovia,Rangers,Motherwell,Hibernian,'Inverness Caledonian Thistle','Toulouse FC','Ruch Chorzów','Jagiellonia Bialystok','St. Mirren','Dundee United','Hamburger SV','Widzew Lódz','Sporting Lokeren','RSC Anderlecht','Standard de Liège','KV Kortrijk','Royal Excel Mouscron','Sporting Charleroi','West Bromwich Albion',Liverpool,'Wigan Athletic','Blackburn Rovers','Tottenham Hotspur','Stoke City',Fulham,'Valenciennes FC','Le Mans FC','AS Monaco','AS Nancy-Lorraine','Girondins de Bordeaux','FC Sochaux-Montbéliard','Le Havre AC','Borussia Dortmund','Hannover 96','1. FC Köln','SV Werder Bremen','TSG 1899 Hoffenheim','VfL Bochum','Wisla Kraków','Piast Gliwice','Slask Wroclaw','Heart of Midlothian',Aberdeen,Falkirk,'Hamilton Academical FC',Kilmarnock,'Beerschot AC','RAEC Mons','Newcastle United','Manchester City',Portsmouth,'Stade Rennais FC','Olympique Lyonnais','AJ Auxerre','Hertha BSC Berlin','VfB Stuttgart','Legia Warszawa','Lech Poznan',Celtic,'FC Energie Cottbus','Vitória Setúbal','KAA Gent','KVC Westerlo','KSV Roeselare',Tubize,'KV Mechelen','KSV Cercle Brugge','FCV Dender EH',Middlesbrough,Sunderland,'Bolton Wanderers','Hull City',Arsenal,Everton,'Aston Villa','Karlsruher SC','FC Bayern Munich','Bayer 04 Leverkusen','FC Schalke 04','DSC Arminia Bielefeld','Borussia Mönchengladbach','Arka Gdynia',Trofense,'SC Braga','KRC Genk','West Ham United',Chelsea,'Eintracht Frankfurt','VfL Wolfsburg','CF Os Belenenses','Académica de Coimbra','SL Benfica','CD Nacional','CS Marítimo','Manchester United','Club Brugge KV','FC Groningen','FC Paços de Ferreira','SV Zulte-Waregem',Inter,Palermo,'FC Twente',Ajax,'De Graafschap',PSV,'FC Porto','RCD Mallorca','Real Valladolid',Siena,Lazio,Genoa,'Reggio Calabria',Juventus,Bologna,Napoli,Lecce,Feyenoord,'ADO Den Haag','SC Heerenveen','NAC Breda',Amadora,'Naval 1° de Maio','Rio Ave FC','Leixões SC','Villarreal CF','Real Madrid CF','FC Barcelona','Sevilla FC','Getafe CF','RC Recreativo','UD Almería','Málaga CF','Vitória Guimarães','Sporting CP','Heracles Almelo',Roma,Catania,'Sparta Rotterdam',AZ,N.E.C.,'FC Volendam','Racing Santander','Real Sporting de Gijón','Atlético Madrid',Atalanta,Cagliari,Torino,Fiorentina,'Chievo Verona',Sampdoria,Udinese,Milan,Vitesse,'Willem II','FC Utrecht','Roda JC Kerkrade','RC Deportivo de La Coruña','CD Numancia','Real Betis Balompié','RCD Espanyol','Athletic Club de Bilbao','Valencia CF','CA Osasuna','FC St. Gallen','Sint-Truidense VV',VVV-Venlo,'Zaglebie Lubin','US Boulogne Cote D\'Opale','RKC Waalwijk','RC Lens',Burnley,'Montpellier Hérault SC','SC Freiburg','1. FC Nürnberg','1. FSV Mainz 05','Korona Kielce','Birmingham City','S.C. Olhanense','Wolverhampton Wanderers','União de Leiria, SAD','St. Johnstone FC',Bari,Parma,'CD Tenerife',Livorno,'Xerez Club Deportivo','Real Zaragoza','FC Thun','Lierse SK','KAS Eupen','AC Arles-Avignon','Stade Brestois 29',Excelsior,Portimonense,Blackpool,'1. FC Kaiserslautern','FC St. Pauli','SC Beira Mar',Cesena,Brescia,'Hércules Club de Fútbol','Levante UD','Real Sociedad','FC Lausanne-Sports','Servette FC','Oud-Heverlee Leuven','Évian Thonon Gaillard FC','Podbeskidzie Bielsko-Biala','Norwich City','AC Ajaccio','Dijon FCO','Dunfermline Athletic','FC Augsburg','Swansea City','Gil Vicente FC','Queens Park Rangers',Feirense,'Rayo Vallecano',Novara,'Granada CF',Waasland-Beveren,'Dundee FC','SC Bastia','PEC Zwolle','Ross County FC','Estoril Praia','Stade de Reims','ES Troyes AC',Southampton,'Moreirense FC',Reading,'Fortuna Düsseldorf','RC Celta de Vigo','SpVgg Greuther Fürth','Pogon Szczecin',Pescara,'Zawisza Bydgoszcz','Go Ahead Eagles','SC Cambuur','Partick Thistle F.C.','Cardiff City','En Avant de Guingamp','Eintracht Braunschweig','FC Arouca','Elche CF','Crystal Palace',Sassuolo,'Hellas Verona','KV Oostende','Górnik Leczna','FC Metz','FC Dordrecht','Boavista FC','FC Penafiel','Leicester City','Córdoba CF','SC Paderborn 07','SD Eibar',Empoli,Lugano,'Termalica Bruk-Bet Nieciecza',Watford,'Angers SCO','GFC Ajaccio','FC Ingolstadt 04',Bournemouth,'SV Darmstadt 98','UD Las Palmas',Carpi,Tondela,'Uniao da Madeira',Frosinone}
+@attribute home_team_goal numeric
+@attribute away_team_goal numeric
+@attribute win {'Visitor Wins!','Home Wins!',Draw!}
+
+@data
+
+
+Clusterer Model
+
+kMeans
+======
+
+Number of iterations: 6
+Within cluster sum of squared errors: 130248.7768778428
+
+Initial starting points (random):
+
+Cluster 0: Belgium,'Belgium Jupiler League',2008/2009,12,'FCV Dender EH','KV Kortrijk',1,0,'Home Wins!'
+Cluster 1: Italy,'Italy Serie A',2012/2013,21,Juventus,Udinese,4,0,'Home Wins!'
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                                                                     Cluster#
+Attribute                                    Full Data                      0                      1
+                                             (25979.0)              (12052.0)              (13927.0)
+====================================================================================================
+country                                         France                Belgium                  Italy
+league                                  France Ligue 1 Belgium Jupiler League          Italy Serie A
+season                                       2008/2009              2008/2009              2012/2013
+stage                                          18.2428                 11.995                23.6494
+home_name                        Girondins de Bordeaux               KAA Gent          Chievo Verona
+visitor_name                                Motherwell               KAA Gent                  Inter
+home_team_goal                                  1.5446                 1.5433                 1.5457
+away_team_goal                                  1.1609                  1.164                 1.1583
+win                                         Home Wins!             Home Wins!             Home Wins!
+
+
+
+
+Time taken to build model (full training data) : 0.04 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0      12052 ( 46%)
+1      13927 ( 54%)
+
