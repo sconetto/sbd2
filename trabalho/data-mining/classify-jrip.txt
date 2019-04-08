@@ -1,0 +1,67 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.JRip -F 3 -N 2.0 -O 2 -S 1
+Relation:     QueryResult-weka.filters.unsupervised.attribute.Remove-R1,6-weka.filters.unsupervised.attribute.Remove-R6,8
+Instances:    25979
+Attributes:   9
+              country
+              league
+              season
+              stage
+              home_name
+              visitor_name
+              home_team_goal
+              away_team_goal
+              win
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+JRIP rules:
+===========
+
+(home_team_goal <= 1) and (away_team_goal <= 1) and (away_team_goal >= 1) and (home_team_goal >= 1) => win=Draw! (3014.0/0.0)
+(home_team_goal <= 0) and (away_team_goal <= 0) => win=Draw! (1978.0/0.0)
+(away_team_goal >= 2) and (home_team_goal >= 2) and (home_team_goal <= 2) and (away_team_goal <= 2) => win=Draw! (1310.0/0.0)
+(away_team_goal >= 3) and (home_team_goal >= 3) and (home_team_goal <= 3) and (away_team_goal <= 3) => win=Draw! (264.0/0.0)
+(away_team_goal >= 4) and (home_team_goal >= 4) and (away_team_goal <= 4) and (home_team_goal <= 4) => win=Draw! (27.0/0.0)
+(away_team_goal >= 5) and (home_team_goal >= 5) => win=Draw! (3.0/0.0)
+(away_team_goal >= 2) and (home_team_goal <= 2) => win=Visitor Wins! (5515.0/0.0)
+(home_team_goal <= 0) => win=Visitor Wins! (1863.0/0.0)
+(away_team_goal >= 4) and (home_team_goal <= 4) => win=Visitor Wins! (88.0/0.0)
+ => win=Home Wins! (11917.0/0.0)
+
+Number of Rules : 10
+
+
+Time taken to build model: 1.28 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0.03 seconds
+
+=== Summary ===
+
+Correctly Classified Instances       25979              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0     
+Root mean squared error                  0     
+Relative absolute error                  0      %
+Root relative squared error              0      %
+Total Number of Instances            25979     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     Visitor Wins!
+                 1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     Home Wins!
+                 1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     Draw!
+Weighted Avg.    1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     
+
+=== Confusion Matrix ===
+
+     a     b     c   <-- classified as
+  7466     0     0 |     a = Visitor Wins!
+     0 11917     0 |     b = Home Wins!
+     0     0  6596 |     c = Draw!

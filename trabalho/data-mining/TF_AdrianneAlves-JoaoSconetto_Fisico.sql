@@ -8,12 +8,12 @@
 -- Banco de Dados .........: MySQL                                   --
 -- Banco de Dados(nome) ...: europeanSoccer                          --
 --                                                                   --
--- Data Ultima Alteracao ..: 14/11/2018 - criação da versão inicial  --
+-- Data Ultima Alteracao ..: 25/11/2018 - Alterações na tabela Match --
 --                                                                   --
 --                                                                   --
 -- PROJETO => 1 Base de Dados                                        --
 --         => 7 Tabelas                                              --
---         => X Usuarios                                             --
+--         => 1 Usuarios                                             --
 -- ----------------------------------------------------------------- --
 
 CREATE DATABASE IF NOT EXISTS europeanSoccer;

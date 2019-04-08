@@ -1,0 +1,52 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.ZeroR 
+Relation:     QueryResult-weka.filters.unsupervised.attribute.Remove-R1,6-weka.filters.unsupervised.attribute.Remove-R6,8
+Instances:    25979
+Attributes:   9
+              country
+              league
+              season
+              stage
+              home_name
+              visitor_name
+              home_team_goal
+              away_team_goal
+              win
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+ZeroR predicts class value: Home Wins!
+
+Time taken to build model: 0.02 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0.01 seconds
+
+=== Summary ===
+
+Correctly Classified Instances       11917               45.8717 %
+Incorrectly Classified Instances     14062               54.1283 %
+Kappa statistic                          0     
+Mean absolute error                      0.4284
+Root mean squared error                  0.4628
+Relative absolute error                100      %
+Root relative squared error            100      %
+Total Number of Instances            25979     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,000    0,000    ?          0,000    ?          ?        0,500     0,287     Visitor Wins!
+                 1,000    1,000    0,459      1,000    0,629      ?        0,500     0,459     Home Wins!
+                 0,000    0,000    ?          0,000    ?          ?        0,500     0,254     Draw!
+Weighted Avg.    0,459    0,459    ?          0,459    ?          ?        0,500     0,357     
+
+=== Confusion Matrix ===
+
+     a     b     c   <-- classified as
+     0  7466     0 |     a = Visitor Wins!
+     0 11917     0 |     b = Home Wins!
+     0  6596     0 |     c = Draw!

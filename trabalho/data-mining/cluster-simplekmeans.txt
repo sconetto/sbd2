@@ -1,0 +1,60 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.SimpleKMeans -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 2 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 10
+Relation:     QueryResult-weka.filters.unsupervised.attribute.Remove-R1,6,8,10
+Instances:    25979
+Attributes:   9
+              country
+              league
+              season
+              stage
+              home_name
+              visitor_name
+              home_team_goal
+              away_team_goal
+              win
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+
+kMeans
+======
+
+Number of iterations: 6
+Within cluster sum of squared errors: 130248.7768778428
+
+Initial starting points (random):
+
+Cluster 0: Belgium,'Belgium Jupiler League',2008/2009,12,'FCV Dender EH','KV Kortrijk',1,0,'Home Wins!'
+Cluster 1: Italy,'Italy Serie A',2012/2013,21,Juventus,Udinese,4,0,'Home Wins!'
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                                                                     Cluster#
+Attribute                                    Full Data                      0                      1
+                                             (25979.0)              (12052.0)              (13927.0)
+====================================================================================================
+country                                         France                Belgium                  Italy
+league                                  France Ligue 1 Belgium Jupiler League          Italy Serie A
+season                                       2008/2009              2008/2009              2012/2013
+stage                                          18.2428                 11.995                23.6494
+home_name                        Girondins de Bordeaux               KAA Gent          Chievo Verona
+visitor_name                                Motherwell               KAA Gent                  Inter
+home_team_goal                                  1.5446                 1.5433                 1.5457
+away_team_goal                                  1.1609                  1.164                 1.1583
+win                                         Home Wins!             Home Wins!             Home Wins!
+
+
+
+
+Time taken to build model (full training data) : 0.09 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0      12052 ( 46%)
+1      13927 ( 54%)

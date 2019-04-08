@@ -1,0 +1,238 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.Canopy -N -1 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t2 -1.0 -t1 -1.25 -S 1
+Relation:     QueryResult-weka.filters.unsupervised.attribute.Remove-R1,6-weka.filters.unsupervised.attribute.Remove-R6,8
+Instances:    25979
+Attributes:   9
+              country
+              league
+              season
+              stage
+              home_name
+              visitor_name
+              home_team_goal
+              away_team_goal
+              win
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+
+Canopy clustering
+=================
+
+Number of canopies (cluster centers) found: 100
+T2 radius: 1,330     
+T1 radius: 1,663     
+
+Cluster 0: Belgium,'Belgium Jupiler League',2008/2009,16.75,'Standard de Liège','Sporting Charleroi',1,2,'Visitor Wins!',{4} <0>
+Cluster 1: Belgium,'Belgium Jupiler League',2014/2015,10.666667,'Sporting Lokeren','Sporting Charleroi',2.416667,0.583333,'Home Wins!',{12} <1,55,64,69>
+Cluster 2: Scotland,'Scotland Premier League',2010/2011,20.347826,'Dundee United',Aberdeen,2.434783,0.434783,'Home Wins!',{23} <2,10>
+Cluster 3: Italy,'Italy Serie A',2008/2009,18.733333,Lecce,Milan,1.133333,1.133333,Draw!,{15} <3>
+Cluster 4: Spain,'Spain LIGA BBVA',2012/2013,17.466667,'Sevilla FC','Atlético Madrid',0.6,2.266667,'Visitor Wins!',{15} <4>
+Cluster 5: Belgium,'Belgium Jupiler League',2015/2016,12.142857,'KV Mechelen','KV Kortrijk',0.714286,2.285714,'Visitor Wins!',{7} <5>
+Cluster 6: France,'France Ligue 1',2015/2016,20.416667,'GFC Ajaccio','Toulouse FC',1,1,Draw!,{12} <6,80>
+Cluster 7: Spain,'Spain LIGA BBVA',2008/2009,18.2,'Getafe CF','RCD Mallorca',2.5,0.4,'Home Wins!',{20} <7,19>
+Cluster 8: Scotland,'Scotland Premier League',2009/2010,19.272727,Motherwell,Kilmarnock,1.727273,0.227273,'Home Wins!',{22} <8>
+Cluster 9: Belgium,'Belgium Jupiler League',2015/2016,18.090909,'Oud-Heverlee Leuven','KV Oostende',2.363636,0.545455,'Home Wins!',{11} <9,70>
+Cluster 10: Scotland,'Scotland Premier League',2008/2009,16.875,'Dundee United',Hibernian,2.1875,0.625,'Home Wins!',{16} <2,10,18,94>
+Cluster 11: Italy,'Italy Serie A',2014/2015,14.307692,Genoa,Napoli,0.384615,1.923077,'Visitor Wins!',{13} <11,46,91>
+Cluster 12: Italy,'Italy Serie A',2014/2015,17.666667,Inter,Palermo,2.722222,0.888889,'Home Wins!',{18} <12>
+Cluster 13: Portugal,'Portugal Liga ZON Sagres',2011/2012,16.111111,'Rio Ave FC','União de Leiria, SAD',2.111111,0.5,'Home Wins!',{18} <13>
+Cluster 14: England,'England Premier League',2012/2013,18.947368,'Stoke City','Queens Park Rangers',2.157895,0.736842,'Home Wins!',{19} <14>
+Cluster 15: Switzerland,'Switzerland Super League',2011/2012,19.75,'FC Basel','FC Luzern',2.875,0.458333,'Home Wins!',{24} <15>
+Cluster 16: Portugal,'Portugal Liga ZON Sagres',2013/2014,14.571429,'Sporting CP','FC Paços de Ferreira',2.380952,0.428571,'Home Wins!',{21} <16,42,44>
+Cluster 17: Belgium,'Belgium Jupiler League',2011/2012,14.153846,'Lierse SK','KRC Genk',0.846154,0.846154,Draw!,{13} <17>
+Cluster 18: Scotland,'Scotland Premier League',2008/2009,21.058824,Aberdeen,'Heart of Midlothian',1.588235,0.235294,'Home Wins!',{17} <10,18,94>
+Cluster 19: Spain,'Spain LIGA BBVA',2008/2009,19.333333,'Athletic Club de Bilbao','Real Sporting de Gijón',2.571429,0.666667,'Home Wins!',{21} <7,19,54>
+Cluster 20: Italy,'Italy Serie A',2015/2016,23.857143,Carpi,Empoli,2.285714,0.714286,'Home Wins!',{14} <20,53>
+Cluster 21: Italy,'Italy Serie A',2013/2014,19.625,'Hellas Verona',Roma,0.4375,2.3125,'Visitor Wins!',{16} <21,91>
+Cluster 22: France,'France Ligue 1',2014/2015,15.583333,'Stade Rennais FC','Paris Saint-Germain',0.75,0.75,Draw!,{12} <22>
+Cluster 23: Germany,'Germany 1. Bundesliga',2012/2013,18.636364,'Bayer 04 Leverkusen','Hamburger SV',3.090909,0.772727,'Home Wins!',{22} <23>
+Cluster 24: Portugal,'Portugal Liga ZON Sagres',2013/2014,15.428571,'SL Benfica','FC Arouca',1.142857,1.142857,Draw!,{7} <24>
+Cluster 25: France,'France Ligue 1',2012/2013,15.285714,'Stade Brestois 29','SC Bastia',2.714286,0.642857,'Home Wins!',{14} <25>
+Cluster 26: Belgium,'Belgium Jupiler League',2015/2016,15.333333,'SV Zulte-Waregem','Oud-Heverlee Leuven',1.333333,1.333333,Draw!,{9} <26>
+Cluster 27: France,'France Ligue 1',2013/2014,20.407407,'LOSC Lille','AC Ajaccio',2.111111,0.333333,'Home Wins!',{27} <27,30>
+Cluster 28: Italy,'Italy Serie A',2011/2012,17.666667,Lecce,Lazio,0.611111,2.222222,'Visitor Wins!',{18} <28>
+Cluster 29: France,'France Ligue 1',2014/2015,18.318182,'Olympique Lyonnais','Olympique de Marseille',2.227273,0.363636,'Home Wins!',{22} <29,30,78>
+Cluster 30: France,'France Ligue 1',2014/2015,21.368421,'LOSC Lille','FC Nantes',2.105263,0.315789,'Home Wins!',{19} <27,29,30,78>
+Cluster 31: England,'England Premier League',2012/2013,15.571429,'Aston Villa','West Bromwich Albion',0.571429,0.571429,Draw!,{7} <31,92>
+Cluster 32: England,'England Premier League',2012/2013,19.866667,'Newcastle United',Everton,0.466667,2.466667,'Visitor Wins!',{15} <32,41>
+Cluster 33: Portugal,'Portugal Liga ZON Sagres',2010/2011,18,'União de Leiria, SAD','Vitória Guimarães',0.538462,2.307692,'Visitor Wins!',{13} <33>
+Cluster 34: Italy,'Italy Serie A',2012/2013,22.142857,Inter,Siena,1.142857,2.428571,'Visitor Wins!',{7} <34>
+Cluster 35: England,'England Premier League',2010/2011,16.875,'Blackburn Rovers','West Bromwich Albion',2.3125,0.3125,'Home Wins!',{16} <35,36,45,74,92>
+Cluster 36: England,'England Premier League',2010/2011,21.583333,Liverpool,'Blackburn Rovers',2.875,0.625,'Home Wins!',{24} <35,36,45,74>
+Cluster 37: France,'France Ligue 1',2012/2013,19.846154,'AC Ajaccio','Toulouse FC',0.461538,2.153846,'Visitor Wins!',{13} <37>
+Cluster 38: Germany,'Germany 1. Bundesliga',2011/2012,15.230769,'Hamburger SV','Bayer 04 Leverkusen',1,1,Draw!,{13} <38>
+Cluster 39: France,'France Ligue 1',2010/2011,19.8125,'SM Caen','AS Monaco',1.125,1.125,Draw!,{16} <39>
+Cluster 40: England,'England Premier League',2015/2016,15.727273,Everton,Liverpool,1.090909,1.090909,Draw!,{11} <40,93>
+Cluster 41: England,'England Premier League',2014/2015,23.857143,'Newcastle United','Tottenham Hotspur',0.714286,2.142857,'Visitor Wins!',{14} <32,41>
+Cluster 42: Portugal,'Portugal Liga ZON Sagres',2009/2010,18,'Naval 1° de Maio','FC Paços de Ferreira',1.818182,0.545455,'Home Wins!',{11} <16,42>
+Cluster 43: Portugal,'Portugal Liga ZON Sagres',2014/2015,18.666667,'CF Os Belenenses','Vitória Setúbal',0.666667,0.666667,Draw!,{12} <43,62>
+Cluster 44: Portugal,'Portugal Liga ZON Sagres',2013/2014,16.555556,'SC Braga','Vitória Guimarães',2.5,0.833333,'Home Wins!',{18} <16,44>
+Cluster 45: England,'England Premier League',2010/2011,19.4,Fulham,Blackpool,3,0.666667,'Home Wins!',{15} <35,36,45,74>
+Cluster 46: Italy,'Italy Serie A',2010/2011,19.3125,Cagliari,Napoli,0.3125,2,'Visitor Wins!',{16} <11,46>
+Cluster 47: Spain,'Spain LIGA BBVA',2015/2016,16.117647,'RC Deportivo de La Coruña','Sevilla FC',1.235294,1.235294,Draw!,{17} <47>
+Cluster 48: Portugal,'Portugal Liga ZON Sagres',2012/2013,16.625,'Vitória Guimarães','Estoril Praia',1.25,1.25,Draw!,{8} <48,75>
+Cluster 49: Scotland,'Scotland Premier League',2013/2014,19.666667,Hibernian,'Ross County FC',1.416667,1.333333,Draw!,{12} <49>
+Cluster 50: Germany,'Germany 1. Bundesliga',2013/2014,18.1,'FC Augsburg','Eintracht Braunschweig',2.5,0.6,'Home Wins!',{20} <50>
+Cluster 51: Spain,'Spain LIGA BBVA',2013/2014,20.375,'Levante UD','RC Celta de Vigo',0.5625,2.1875,'Visitor Wins!',{16} <51>
+Cluster 52: Italy,'Italy Serie A',2009/2010,20.607143,Palermo,Atalanta,2.142857,0.535714,'Home Wins!',{28} <52>
+Cluster 53: Italy,'Italy Serie A',2015/2016,20.263158,Genoa,Torino,2.421053,0.631579,'Home Wins!',{19} <20,53>
+Cluster 54: Spain,'Spain LIGA BBVA',2013/2014,18.576923,'Athletic Club de Bilbao','Real Valladolid',2.846154,0.692308,'Home Wins!',{26} <19,54>
+Cluster 55: Belgium,'Belgium Jupiler League',2014/2015,15.166667,'KSV Cercle Brugge',Waasland-Beveren,2.166667,0.833333,'Home Wins!',{12} <1,55>
+Cluster 56: Switzerland,'Switzerland Super League',2013/2014,18.857143,'FC Aarau','FC St. Gallen',1.142857,1.142857,Draw!,{7} <56>
+Cluster 57: Switzerland,'Switzerland Super League',2013/2014,18.25,'FC Thun','FC Sion',2.333333,0.541667,'Home Wins!',{24} <57>
+Cluster 58: Belgium,'Belgium Jupiler League',2010/2011,16.863636,'KAA Gent','KSV Cercle Brugge',2.5,0.636364,'Home Wins!',{22} <58,69>
+Cluster 59: England,'England Premier League',2009/2010,20.088235,Chelsea,Sunderland,2.970588,0.470588,'Home Wins!',{34} <59>
+Cluster 60: France,'France Ligue 1',2010/2011,21,'Girondins de Bordeaux','AS Saint-Étienne',1.944444,0.388889,'Home Wins!',{18} <60>
+Cluster 61: Scotland,'Scotland Premier League',2012/2013,20.0625,'Heart of Midlothian',Kilmarnock,0.5,2.375,'Visitor Wins!',{16} <61>
+Cluster 62: Portugal,'Portugal Liga ZON Sagres',2014/2015,19.777778,'FC Paços de Ferreira','Gil Vicente FC',1.111111,1.111111,Draw!,{9} <43,62>
+Cluster 63: France,'France Ligue 1',2009/2010,15.2,'AJ Auxerre','Olympique Lyonnais',0.3,2.4,'Visitor Wins!',{10} <63>
+Cluster 64: Belgium,'Belgium Jupiler League',2009/2010,18.666667,'Sporting Lokeren','Beerschot AC',1.666667,0.083333,'Home Wins!',{12} <1,64,69>
+Cluster 65: France,'France Ligue 1',2008/2009,19.333333,'Grenoble Foot 38','FC Nantes',0.222222,1.888889,'Visitor Wins!',{9} <65>
+Cluster 66: Spain,'Spain LIGA BBVA',2011/2012,15.55,'RCD Espanyol','Granada CF',2.45,0.6,'Home Wins!',{20} <66>
+Cluster 67: Italy,'Italy Serie A',2008/2009,20.333333,Lazio,Catania,2.095238,0.52381,'Home Wins!',{21} <67,84>
+Cluster 68: Poland,'Poland Ekstraklasa',2010/2011,14.913043,'Arka Gdynia','Polonia Bytom',2.347826,0.26087,'Home Wins!',{23} <68>
+Cluster 69: Belgium,'Belgium Jupiler League',2009/2010,15.384615,'KAA Gent','Sporting Charleroi',2.307692,0.538462,'Home Wins!',{13} <1,58,64,69>
+Cluster 70: Belgium,'Belgium Jupiler League',2015/2016,15.857143,'KV Oostende','RSC Anderlecht',2.428571,0.714286,'Home Wins!',{14} <9,70>
+Cluster 71: Switzerland,'Switzerland Super League',2012/2013,14.384615,'BSC Young Boys','Grasshopper Club Zürich',0.538462,2.153846,'Visitor Wins!',{13} <71>
+Cluster 72: Netherlands,'Netherlands Eredivisie',2011/2012,18.4,'RKC Waalwijk','NAC Breda',2.25,0.55,'Home Wins!',{20} <72,81>
+Cluster 73: Switzerland,'Switzerland Super League',2009/2010,23.545455,'AC Bellinzona','FC Aarau',0.727273,3,'Visitor Wins!',{11} <73>
+Cluster 74: England,'England Premier League',2010/2011,18.52,'Manchester United',Fulham,2.16,0.48,'Home Wins!',{25} <35,36,45,74>
+Cluster 75: Portugal,'Portugal Liga ZON Sagres',2013/2014,14.666667,'Vitória Guimarães','Estoril Praia',0.444444,2,'Visitor Wins!',{9} <48,75>
+Cluster 76: Spain,'Spain LIGA BBVA',2014/2015,18.769231,'RC Deportivo de La Coruña','Elche CF',2.384615,0.153846,'Home Wins!',{13} <76>
+Cluster 77: Poland,'Poland Ekstraklasa',2014/2015,12,'Zawisza Bydgoszcz','Legia Warszawa',0.571429,2.714286,'Visitor Wins!',{14} <77>
+Cluster 78: France,'France Ligue 1',2014/2015,18.692308,'Olympique de Marseille','AS Monaco',2.153846,0.538462,'Home Wins!',{13} <29,30,78>
+Cluster 79: Poland,'Poland Ekstraklasa',2008/2009,17.307692,'Lechia Gdansk','Wisla Kraków',0.384615,2.307692,'Visitor Wins!',{13} <79>
+Cluster 80: France,'France Ligue 1',2015/2016,17,'FC Nantes','Girondins de Bordeaux',0.727273,0.727273,Draw!,{11} <6,80>
+Cluster 81: Netherlands,'Netherlands Eredivisie',2011/2012,17.818182,Ajax,Vitesse,3.318182,0.545455,'Home Wins!',{22} <72,81>
+Cluster 82: Germany,'Germany 1. Bundesliga',2014/2015,15.8,'FC Schalke 04','Eintracht Frankfurt',1,1,Draw!,{10} <82>
+Cluster 83: Germany,'Germany 1. Bundesliga',2008/2009,14.285714,'TSG 1899 Hoffenheim','Karlsruher SC',2.380952,0.47619,'Home Wins!',{21} <83>
+Cluster 84: Italy,'Italy Serie A',2009/2010,18.666667,Lazio,Catania,0.444444,1.777778,'Visitor Wins!',{9} <67,84>
+Cluster 85: Scotland,'Scotland Premier League',2014/2015,19.5,Aberdeen,'Partick Thistle F.C.',1.4,1.2,Draw!,{10} <85>
+Cluster 86: Spain,'Spain LIGA BBVA',2009/2010,19,'CA Osasuna','RCD Mallorca',0.666667,2.333333,'Visitor Wins!',{6} <86>
+Cluster 87: Belgium,'Belgium Jupiler League',2010/2011,16.75,'KSV Cercle Brugge','KAA Gent',0.333333,1.75,'Visitor Wins!',{12} <87>
+Cluster 88: Portugal,'Portugal Liga ZON Sagres',2015/2016,20.1875,'Sporting CP','SL Benfica',0.5,2.5625,'Visitor Wins!',{16} <88>
+Cluster 89: Portugal,'Portugal Liga ZON Sagres',2010/2011,17.375,'S.C. Olhanense','SL Benfica',0.875,0.875,Draw!,{8} <89>
+Cluster 90: Netherlands,'Netherlands Eredivisie',2009/2010,18.916667,'Sparta Rotterdam','FC Utrecht',0.416667,2.25,'Visitor Wins!',{12} <90>
+Cluster 91: Italy,'Italy Serie A',2014/2015,18.454545,'Hellas Verona','Chievo Verona',0.363636,1.909091,'Visitor Wins!',{11} <11,21,91>
+Cluster 92: England,'England Premier League',2008/2009,25.888889,'Blackburn Rovers','West Bromwich Albion',1.111111,1.111111,Draw!,{9} <31,35,92>
+Cluster 93: England,'England Premier League',2015/2016,19.727273,'Manchester United','West Ham United',0.909091,0.909091,Draw!,{11} <40,93>
+Cluster 94: Scotland,'Scotland Premier League',2008/2009,21.222222,Kilmarnock,'Inverness Caledonian Thistle',2.222222,0.611111,'Home Wins!',{18} <10,18,94>
+Cluster 95: Spain,'Spain LIGA BBVA',2008/2009,9.666667,'FC Barcelona','Racing Santander',1,1,Draw!,{3} <95>
+Cluster 96: England,'England Premier League',2014/2015,21.7,Burnley,'Stoke City',0.8,0.8,Draw!,{10} <96>
+Cluster 97: Netherlands,'Netherlands Eredivisie',2012/2013,19.863636,'FC Utrecht','Heracles Almelo',2.727273,0.590909,'Home Wins!',{22} <97>
+Cluster 98: France,'France Ligue 1',2013/2014,21.5,'Évian Thonon Gaillard FC','FC Lorient',0.6,2,'Visitor Wins!',{10} <98>
+Cluster 99: Germany,'Germany 1. Bundesliga',2009/2010,15.8,'FC Bayern Munich','FC Schalke 04',0.8,0.8,Draw!,{10} <99>
+
+
+
+Time taken to build model (full training data) : 0.28 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+  0        186 (  1%)
+  1        166 (  1%)
+  2        171 (  1%)
+  3        535 (  2%)
+  4        347 (  1%)
+  5        193 (  1%)
+  6        264 (  1%)
+  7        169 (  1%)
+  8        190 (  1%)
+  9        113 (  0%)
+ 10        233 (  1%)
+ 11        167 (  1%)
+ 12        428 (  2%)
+ 13        160 (  1%)
+ 14        221 (  1%)
+ 15        354 (  1%)
+ 16        263 (  1%)
+ 17        220 (  1%)
+ 18        179 (  1%)
+ 19        367 (  1%)
+ 20        296 (  1%)
+ 21        156 (  1%)
+ 22        319 (  1%)
+ 23        479 (  2%)
+ 24        186 (  1%)
+ 25        317 (  1%)
+ 26        157 (  1%)
+ 27        192 (  1%)
+ 28        141 (  1%)
+ 29        197 (  1%)
+ 30        285 (  1%)
+ 31        193 (  1%)
+ 32        362 (  1%)
+ 33        157 (  1%)
+ 34        184 (  1%)
+ 35        265 (  1%)
+ 36        307 (  1%)
+ 37        146 (  1%)
+ 38        387 (  1%)
+ 39        201 (  1%)
+ 40        278 (  1%)
+ 41        364 (  1%)
+ 42        211 (  1%)
+ 43        123 (  0%)
+ 44        208 (  1%)
+ 45         91 (  0%)
+ 46        168 (  1%)
+ 47        334 (  1%)
+ 48        129 (  0%)
+ 49        223 (  1%)
+ 50        379 (  1%)
+ 51        372 (  1%)
+ 52        281 (  1%)
+ 53        189 (  1%)
+ 54        261 (  1%)
+ 55        101 (  0%)
+ 56        313 (  1%)
+ 57        276 (  1%)
+ 58        162 (  1%)
+ 59        273 (  1%)
+ 60        264 (  1%)
+ 61        471 (  2%)
+ 62        157 (  1%)
+ 63        250 (  1%)
+ 64        159 (  1%)
+ 65        136 (  1%)
+ 66        426 (  2%)
+ 67        301 (  1%)
+ 68        939 (  4%)
+ 69         92 (  0%)
+ 70         74 (  0%)
+ 71        294 (  1%)
+ 72        421 (  2%)
+ 73        205 (  1%)
+ 74        171 (  1%)
+ 75        187 (  1%)
+ 76        305 (  1%)
+ 77        375 (  1%)
+ 78        121 (  0%)
+ 79        419 (  2%)
+ 80        171 (  1%)
+ 81        426 (  2%)
+ 82        365 (  1%)
+ 83        473 (  2%)
+ 84        117 (  0%)
+ 85        223 (  1%)
+ 86        187 (  1%)
+ 87        178 (  1%)
+ 88        278 (  1%)
+ 89        136 (  1%)
+ 90        772 (  3%)
+ 91         86 (  0%)
+ 92        265 (  1%)
+ 93        151 (  1%)
+ 94        175 (  1%)
+ 95        292 (  1%)
+ 96        171 (  1%)
+ 97        556 (  2%)
+ 98        265 (  1%)
+ 99        336 (  1%)
+
